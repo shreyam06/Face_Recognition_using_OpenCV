@@ -12,7 +12,7 @@ labels = np.load('labels.npy',allow_pickle=True)
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('faceTrained.yml')
 
-img = cv.imread('C:/Users/HP/Desktop/CODE/PYTHON .. OPENCV/FAC/Faces/val/Deepeka/3.jpg')
+img = cv.imread(r'C:\Users\HP\Desktop\CODE\PYTHON .. OPENCV\FAC\Faces\val\ben_afflek\1.jpg')
 
 gray = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 cv.imshow('Person',gray)
